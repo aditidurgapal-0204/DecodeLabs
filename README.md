@@ -31,15 +31,15 @@ This is a modern web application framework that relies on an ASGI Server Engine 
 Open your terminal inside this project's root folder (DecodeLabs) and execute the following installation command:
 
 ```bash
-> pip install fastapi uvicorn sqlalchemy argon2-cffi pyjwt python-multipart httpx pydantic[email]
+pip install fastapi uvicorn sqlalchemy argon2-cffi pyjwt python-multipart httpx pydantic[email]
 ```
 
 ### Step 2: Set Up Environment Variables (.env)
 A private configuration file named .env must exist in the root folder to house our secure system keys. If you are cloning this repository to a new machine, ensure a .env file is created in the root directory containing these exactly specified credentials:
 
 ```bash
-> JWT_SECRET=super_secret_evaluation_signing_key_123 <br>
-> WEATHER_API_KEY=fallback_local_dev_key
+JWT_SECRET=super_secret_evaluation_signing_key_123 <br>
+WEATHER_API_KEY=fallback_local_dev_key
 ```
 ---
 
