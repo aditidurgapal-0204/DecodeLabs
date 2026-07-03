@@ -49,11 +49,11 @@ Once the packages are installed, execute the following command in your terminal 
 ### 📋 Expected Terminal Output:
 Upon execution, your terminal will confirm the runtime context and initialize the database models cleanly:
 
-> INFO:     Will watch for changes in these directories: ['C:\Users\...\DecodeLabs']
-> INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-> INFO:     Started reloader process [XXXX] using StatReload
-> INFO:     Started server process [XXXX]
-> INFO:     Waiting for application startup.
+> INFO:     Will watch for changes in these directories: ['C:\Users\...\DecodeLabs'] <br>
+> INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit) <br>
+> INFO:     Started reloader process [XXXX] using StatReload <br>
+> INFO:     Started server process [XXXX] <br>
+> INFO:     Waiting for application startup. <br>
 > INFO:     Application startup complete.
 
 ---
