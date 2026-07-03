@@ -48,7 +48,7 @@ WEATHER_API_KEY=fallback_local_dev_key
 Once the packages are installed, execute the following command in your terminal to bring the entire 4-project workspace ecosystem online:
 
 ```bash
-> python -m uvicorn main:app --reload
+python -m uvicorn main:app --reload
 ```
 
 ### 📋 Expected Terminal Output:
