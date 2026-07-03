@@ -28,15 +28,15 @@ Before running the server, you must install the required backend libraries.
 This is a modern web application framework that relies on an ASGI Server Engine (Uvicorn) to manage network traffic. It CANNOT be executed by clicking the generic VS Code "Play/Run" script button, as that button targets a blank system runtime path. It must be executed via the terminal workspace commands outlined below.
 
 ### Step 1: Install Dependencies
-Open your terminal inside this project's root folder (DecodeLabs) and execute the following command to install all necessary packages:
+Open your terminal inside this project's root folder (DecodeLabs) and execute the following installation command:
 
-pip install fastapi uvicorn sqlalchemy argon2-cffi pyjwt python-multipart httpx pydantic[email]
+> pip install fastapi uvicorn sqlalchemy argon2-cffi pyjwt python-multipart httpx pydantic[email]
 
 ### Step 2: Set Up Environment Variables (.env)
-A private configuration file named .env must exist in the root folder to house our secure system keys. If you are cloning this repository to a new machine, ensure a .env file is created in the root directory with the following content:
+A private configuration file named .env must exist in the root folder to house our secure system keys. If you are cloning this repository to a new machine, ensure a .env file is created in the root directory containing these exactly specified credentials:
 
-JWT_SECRET=super_secret_evaluation_signing_key_123
-WEATHER_API_KEY=fallback_local_dev_key
+> JWT_SECRET=super_secret_evaluation_signing_key_123
+> WEATHER_API_KEY=fallback_local_dev_key
 
 ---
 
@@ -44,16 +44,17 @@ WEATHER_API_KEY=fallback_local_dev_key
 
 Once the packages are installed, execute the following command in your terminal to bring the entire 4-project workspace ecosystem online:
 
-python -m uvicorn main:app --reload
+> python -m uvicorn main:app --reload
 
 ### 📋 Expected Terminal Output:
-Upon execution, your terminal will confirm the runtime context and initialize the database models:
-INFO:     Will watch for changes in these directories: ['C:\Users\...\DecodeLabs']
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [XXXX] using StatReload
-INFO:     Started server process [XXXX]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
+Upon execution, your terminal will confirm the runtime context and initialize the database models cleanly:
+
+> INFO:     Will watch for changes in these directories: ['C:\Users\...\DecodeLabs']
+> INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+> INFO:     Started reloader process [XXXX] using StatReload
+> INFO:     Started server process [XXXX]
+> INFO:     Waiting for application startup.
+> INFO:     Application startup complete.
 
 ---
 
