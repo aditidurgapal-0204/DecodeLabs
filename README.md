@@ -38,7 +38,7 @@ pip install fastapi uvicorn sqlalchemy argon2-cffi pyjwt python-multipart httpx 
 A private configuration file named .env must exist in the root folder to house our secure system keys. If you are cloning this repository to a new machine, ensure a .env file is created in the root directory containing these exactly specified credentials:
 
 ```bash
-JWT_SECRET=super_secret_evaluation_signing_key_123 <br>
+JWT_SECRET=super_secret_evaluation_signing_key_123
 WEATHER_API_KEY=fallback_local_dev_key
 ```
 ---
